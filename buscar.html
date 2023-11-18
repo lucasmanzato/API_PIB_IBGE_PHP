@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Dados PIB LATAM</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/js/busca.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Dados PIB LATAM</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="buscar.html">Buscar PIB</a>
+        <a href="historico.html">Ver Histórico</a>
+    </nav>
+
+    <section>
+        <label for="paises">Escolha um país:</label>
+        <select id="paises" name="paises">
+            <option selected disabled value="">Selecione um país</option>
+            <option value="AR">Argentina</option>
+            <option value="BO">Bolívia</option>
+            <option value="BR">Brasil</option>
+            <option value="CL">Chile</option>
+            <option value="CO">Colômbia</option>
+            <option value="EC">Equador</option>
+            <option value="GY">Guiana</option>
+            <option value="PY">Paraguai</option>
+            <option value="PE">Peru</option>
+            <option value="SR">Suriname</option>
+            <option value="UY">Uruguai</option>
+            <option value="VE">Venezuela</option>
+        </select>
+    </section>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</body>
+</html>

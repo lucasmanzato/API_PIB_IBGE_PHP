@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+nav {
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 10px;
+    font-size: 18px;
+}
+a:hover {
+    color: #0056b3;
+}
+a.active {
+    text-decoration: underline;
+}
+
+select {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Estilização do link como um botão */
+a.install {
+    display: inline-block; /* Permite definir padding e margin como um botão */
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove o sublinhado do texto do link */
+    padding: 10px 20px; /* Padding para aumentar o tamanho do 'botão' */
+    margin: 10px; /* Margem externa */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    transition: background-color 0.3s; /* Transição suave para hover */
+}
+
+a.install:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura quando passar o mouse */
+    text-decoration: none; /* Mantém o texto do link sem sublinhado ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    margin-left: auto; /* Margem automática à esquerda */
+    margin-right: auto; /* Margem automática à direita */
+    margin-top: 20px; /* Espaçamento acima da tabela */
+    border-collapse: collapse; /* Remove o espaçamento entre as bordas das células */
+    width: auto; /* Largura automática baseada no conteúdo da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda cinza claro para as células */
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 8px; /* Espaçamento interno nas células */
+}
+
+th {
+    background-color: #f2f2f2; /* Cor de fundo para o cabeçalho da tabela */
+}
+
+/* Estilização do link como um botão */
+button.remove {
+    display: inline-block; /* Permite definir padding e margin como um botão */
+    background-color: red; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    text-decoration: none; /* Remove o sublinhado do texto do link */
+    padding: 10px 20px; /* Padding para aumentar o tamanho do 'botão' */
+    margin: 10px; /* Margem externa */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    transition: background-color 0.3s; /* Transição suave para hover */
+    border: none;
+    cursor: pointer;
+}
+
+button.remove:hover {
+    background-color: red; /* Cor de fundo mais escura quando passar o mouse */
+    text-decoration: none; /* Mantém o texto do link sem sublinhado ao passar o mouse */
+}

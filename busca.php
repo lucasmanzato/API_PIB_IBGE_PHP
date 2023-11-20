@@ -1,12 +1,13 @@
 <?php
 include 'connect.php'; // Incluir o arquivo de conexão
 
-function buscar($pais) {
+function buscar($pais)
+{
     $url = "https://servicodados.ibge.gov.br/api/v1/paises/{$pais}/indicadores/77827";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt ($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_0);
+    curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_0);
     $response = curl_exec($ch);
     // Verifica se ocorreu algum erro na requisição cURL
     if (curl_errno($ch)) {
@@ -19,8 +20,8 @@ function buscar($pais) {
     curl_close($ch);
     if ($response) {
         $dados = json_decode($response, true);
-        // Filtrar para retornar dados apenas do país desejado
-        if(isset($dados[0]) && $dados[0]['series']){
+        // Filtrar dados apenas do país desejado
+        if (isset($dados[0]) && $dados[0]['series']) {
             $paises = $dados[0]['series'];
             foreach ($paises as $item) {
                 if ($item['pais']['id'] === $pais) {
